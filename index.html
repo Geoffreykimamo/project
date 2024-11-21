@@ -1,0 +1,226 @@
+<html><head><base href="." />
+<title>Youth Tech Empower - Empowering Young Minds Through Technology</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="https://youthtechempowe.org">
+            <svg width="40" height="40" viewBox="0 0 40 40" class="me-2">
+                <circle cx="20" cy="20" r="18" fill="var(--primary-color)"/>
+                <text x="20" y="25" text-anchor="middle" fill="white" font-weight="bold" font-size="14">YTE</text>
+            </svg>
+            <span class="fw-bold">Youth Tech Empower</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link fw-semibold" href="#programs">Programs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fw-semibold" href="#impact">Impact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn animated-button ms-2" href="#donate">Donate Now</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="container" data-aos="fade-up">
+        <h1 class="display-4 fw-bold mb-4">Empowering Youth Through Technology</h1>
+        <p class="lead mb-4">Building tomorrow's tech leaders today through innovation, education, and mentorship</p>
+        <a href="#donate" class="btn btn-lg animated-button">Make an Impact</a>
+    </div>
+</section>
+
+<!-- Impact Counter -->
+<section id="impact" class="container py-5">
+    <div class="row text-center impact-counter" data-aos="fade-up">
+        <div class="col-md-4">
+            <h3 class="counter display-4">1000+</h3>
+            <p class="lead">Students Empowered</p>
+        </div>
+        <div class="col-md-4">
+            <h3 class="counter display-4">50+</h3>
+            <p class="lead">Tech Partners</p>
+        </div>
+        <div class="col-md-4">
+            <h3 class="counter display-4">95%</h3>
+            <p class="lead">Success Rate</p>
+        </div>
+    </div>
+</section>
+
+<!-- Programs Section -->
+<section id="programs" class="container py-5">
+    <h2 class="text-center mb-5 fw-bold">Our Programs</h2>
+    <div class="row">
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="card program-card h-100">
+                <div class="card-body text-center">
+                    <i class="fas fa-laptop-code program-icon"></i>
+                    <h5 class="card-title fw-bold mb-3">Coding Bootcamp</h5>
+                    <p class="card-text">Intensive programming courses designed to transform beginners into skilled developers.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="card program-card h-100">
+                <div class="card-body text-center">
+                    <i class="fas fa-paint-brush program-icon"></i>
+                    <h5 class="card-title fw-bold mb-3">Digital Design</h5>
+                    <p class="card-text">Creative workshops empowering students with modern design skills and tools.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="card program-card h-100">
+                <div class="card-body text-center">
+                    <i class="fas fa-users program-icon"></i>
+                    <h5 class="card-title fw-bold mb-3">Tech Mentorship</h5>
+                    <p class="card-text">Personalized guidance from industry experts to shape future tech leaders.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Donation Section -->
+<section id="donate" class="donation-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div class="donation-form" data-aos="zoom-in">
+                    <h3 class="text-center mb-4 fw-bold">Support Our Mission</h3>
+                    <form id="donationForm">
+                        <div class="mb-4">
+                            <label class="form-label fw-bold">Choose Donation Amount</label>
+                            <div class="btn-group w-100" role="group">
+                                <input type="radio" class="btn-check" name="amount" id="amount25" value="25" required>
+                                <label class="btn btn-outline-primary" for="amount25">$25</label>
+                                
+                                <input type="radio" class="btn-check" name="amount" id="amount50" value="50">
+                                <label class="btn btn-outline-primary" for="amount50">$50</label>
+                                
+                                <input type="radio" class="btn-check" name="amount" id="amount100" value="100">
+                                <label class="btn btn-outline-primary" for="amount100">$100</label>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label fw-bold">Your Name</label>
+                            <input type="text" class="form-control form-control-lg" id="donorName" required>
+                        </div>
+                        <div class="mb-4">
+                            <label class="form-label fw-bold">Email Address</label>
+                            <input type="email" class="form-control form-control-lg" id="donorEmail" required>
+                        </div>
+                        <button type="submit" class="btn animated-button w-100">Donate Now</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+document.getElementById('donationForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    // Validate form
+    const amount = document.querySelector('input[name="amount"]:checked');
+    const name = document.getElementById('donorName');
+    const email = document.getElementById('donorEmail');
+    
+    if (!amount || !name.value || !email.value) {
+        alert('Please fill out all fields');
+        return;
+    }
+    
+    // Prepare payment details
+    const paymentDetails = {
+        amount: amount.value,
+        name: name.value,
+        email: email.value
+    };
+    
+    // Redirect to payment gateway
+    // Replace 'YOUR_PAYMENT_GATEWAY_URL' with actual payment gateway URL
+    const paymentGatewayUrl = 'YOUR_PAYMENT_GATEWAY_URL';
+    
+    // Option 1: Simple redirect
+    // window.location.href = `${paymentGatewayUrl}?amount=${paymentDetails.amount}&name=${encodeURIComponent(paymentDetails.name)}&email=${encodeURIComponent(paymentDetails.email)}`;
+    
+    // Option 2: Form-based submission (more secure)
+    const form = document.createElement('form');
+    form.method = 'POST';
+    form.action = paymentGatewayUrl;
+    
+    // Create hidden input fields for payment details
+    const fields = [
+        { name: 'amount', value: paymentDetails.amount },
+        { name: 'donor_name', value: paymentDetails.name },
+        { name: 'donor_email', value: paymentDetails.email }
+    ];
+    
+    fields.forEach(field => {
+        const hiddenField = document.createElement('input');
+        hiddenField.type = 'hidden';
+        hiddenField.name = field.name;
+        hiddenField.value = field.value;
+        form.appendChild(hiddenField);
+    });
+    
+    document.body.appendChild(form);
+    form.submit();
+});
+</script>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="row gy-4">
+            <div class="col-md-4">
+                <h5 class="fw-bold mb-4">Contact Us</h5>
+                <p><i class="fas fa-envelope me-2"></i>info@youthtechempowe.org</p>
+                <p><i class="fas fa-phone me-2"></i>+254 794481272</p>
+            </div>
+            <div class="col-md-4">
+                <h5 class="fw-bold mb-4">Follow Us</h5>
+                <div class="social-links">
+                    <a href="https://facebook.com/youthtechempowe"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/youthtechempowe"><i class="fab fa-twitter"></i></a>
+                    <a href="https://instagram.com/youthtechempowe"><i class="fab fa-instagram"></i></a>
+                    <a href="https://linkedin.com/company/youthtechempowe"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h5 class="fw-bold mb-4">Newsletter</h5>
+                <form class="mt-3">
+                    <div class="input-group">
+                        <input type="email" class="form-control" placeholder="Enter your email">
+                        <button class="btn animated-button" type="submit">Subscribe</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://kit.fontawesome.com/your-kit-code.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script type="module" src="most.js"></script>
+</body></html>
